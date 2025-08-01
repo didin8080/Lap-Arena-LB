@@ -279,8 +279,7 @@ Goto dockerhub --> goto profile --> Account settings --> Personal access token -
 - On jenkins --> manage jenkins-->credentials-->global--> add credentials--> kind=secret text --> on secret paste the sonarqube token and give any name and description-->give sonar-token and description-->create
 - On jenkins --> manage jenkins-->credentials-->global--> add credentials--> kind=secret text --> on secret paste the docker token and give any name and description-->give name as docker and description-->create
 - On jenkins --> manage jenkins-->credentials-->global--> add credentials--> kind=username with password--> username= provide your mail id -->password= the APP PASSWORD that you created --> id smtp.
-- On jenkins --> manage jenkins-->credentials-->global--> add credentials-->kind=username with password--> username=give the username of dockerhub--> password= token of docker hub that we created-->create
-- On jenkins --> manage jenkins-->credentials-->global--> add credentials-->SSH username with privatekey --> ID =DOCKER_TOKEN --> description =DOCKER_TOKEN --> username = ubuntu --> enable private key entire directly --> copy the key inside the pem file and paste it here and add a  new line. -->Create
+- On jenkins --> manage jenkins-->credentials-->global--> add credentials-->SSH username with privatekey --> ID =ssh-agent --> description =DOCKER_TOKEN --> username = ubuntu --> enable private key entire directly --> copy the key inside the pem file and paste it here and add a  new line. -->Create
 
 
 **Step 23: System Configuration in Jenkins**
